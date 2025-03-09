@@ -52,6 +52,8 @@
             font-size: 1.3em;
             transition: all 0.3s ease-in-out;
             box-shadow: 0 6px 18px rgba(255, 215, 0, 0.5);
+            border: none;
+            cursor: pointer;
         }
         .btn:hover {
             transform: translateY(-3px);
@@ -86,6 +88,8 @@
             font-size: 1em;
         }
     </style>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
     <div class="container">
@@ -94,9 +98,7 @@
         <p>Exkluzivní trading kurz, který vás připraví na úspěšné obchodování.</p>
         <p>Připojte se k naší komunitě a získejte přístup ke vzdělávacím materiálům a mentoringu.</p>
         <h2 style="color: #ffcc00; margin-top: 30px;">Nabízíme konzultační hovor zdarma, kde se dozvíš o kurzu víc.</h2>
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <a href="#" class="btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/fundedsoon/konzultace'});return false;">Rezervovat hovor zdarma</a>
+        <button class="btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/fundedsoon/konzultace'});return false;">Rezervovat hovor zdarma</button>
         <h2 style="color: #ffcc00; margin-top: 30px;">Co obsahuje náš kurz?</h2>
         <div class="features">
             <p>Kompletní trading strategie</p>
